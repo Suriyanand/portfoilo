@@ -24,7 +24,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Data Analysis Portfolio
           </h1>
         </motion.div>
 
@@ -46,14 +46,15 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Data Analyst specializing in comprehensive data insights and solutions. With expertise in data visualization, statistical analysis, and machine learning,
+           I uncover valuable insights to drive informed decision-making. Explore my projects and skills to see how I transform data into actionable intelligence.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Learn More!
+         
         </motion.a>
       </div>
 
@@ -62,10 +63,11 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/AI3.png"
           alt="work icons"
-          height={650}
-          width={650}
+          height={400}
+          width={400}
+          className="absolute right-20"
         />
       </motion.div>
     </motion.div>
