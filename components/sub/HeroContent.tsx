@@ -65,9 +65,9 @@ const HeroContent = () => {
         <Image
           src="/AI3.png"
           alt="work icons"
-          height={400}
-          width={400}
-          className="absolute right-20"
+          height={300}
+          width={600}
+          className="relative w-full max-w-[600px] h-[300px] lg:w-[400px] lg:h-[400px]"
         />
       </motion.div>
     </motion.div>
