@@ -1,16 +1,16 @@
+import { SubresourceIntegrityPlugin } from "next/dist/build/webpack/plugins/subresource-integrity-plugin";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
-
 
 interface Props {
   src: string;
   title: string;
   description: string;
-
+  github : string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectCard = ({ src, title, description ,github}: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
       <Image
@@ -18,7 +18,8 @@ const ProjectCard = ({ src, title, description }: Props) => {
         alt={title}
         width={1000}
         height={1000}
-        className="w-full object-contain"
+        layout="responsive"
+        className="w-full object-cover"
       />
 
       <div className="relative p-4">
@@ -26,8 +27,6 @@ const ProjectCard = ({ src, title, description }: Props) => {
         <p className="mt-2 text-gray-300">{description}</p>
         
       </div>
-  
-        
     </div>
   );
 };
